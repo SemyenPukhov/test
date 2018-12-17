@@ -1,0 +1,575 @@
+/*
+@font-face {
+    font-family: "launchtype-regular";
+    src: url(./assets/fonts/lunchtype22-regular-webfont.woff);
+}
+
+@font-face {
+    font-family: "launchtype-medium";
+    src: url(./assets/fonts/lunchtype22-medium-webfont.woff);
+}
+
+@font-face {
+    font-family: "launchtype-light";
+    src: url(./assets/fonts/lunchtype22-light-webfont.woff);
+}
+*/
+
+@font-face {
+    font-family: "GTWalsheimPro-Bold";
+    src: url(./assets/fonts/GTWalsheimPro-Bold.otf);
+}
+
+@font-face {
+    font-family: "GTWalsheimPro-Medium";
+    src: url(./assets/fonts/GTWalsheimPro-Medium.otf);
+}
+
+@font-face {
+    font-family: 'lunchtype22regular';
+    src: url('./assets/fonts/lunchtype22-regular-webfont.eot');
+    src: url('./assets/fonts/lunchtype22-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/lunchtype22-regular-webfont.woff2') format('woff2'),
+    url('./assets/fonts/lunchtype22-regular-webfont.woff') format('woff'),
+    url('./assets/fonts/lunchtype22-regular-webfont.ttf') format('truetype'),
+    url('./assets/fonts/lunchtype22-regular-webfont.svg#lunchtype22regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lunchtype22medium';
+    src: url('./assets/fonts/lunchtype22-medium-webfont.eot');
+    src: url('./assets/fonts/lunchtype22-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/lunchtype22-medium-webfont.woff2') format('woff2'),
+    url('./assets/fonts/lunchtype22-medium-webfont.woff') format('woff'),
+    url('./assets/fonts/lunchtype22-medium-webfont.ttf') format('truetype'),
+    url('./assets/fonts/lunchtype22-medium-webfont.svg#lunchtype22medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lunchtype22light';
+    src: url('./assets/fonts/lunchtype22-light-webfont.eot');
+    src: url('./assets/fonts/lunchtype22-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/lunchtype22-light-webfont.woff2') format('woff2'),
+    url('./assets/fonts/lunchtype22-light-webfont.woff') format('woff'),
+    url('./assets/fonts/lunchtype22-light-webfont.ttf') format('truetype'),
+    url('./assets/fonts/lunchtype22-light-webfont.svg#lunchtype22light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    background-color: white;
+    color: black;
+    margin: 0;
+    font-size: 16px;
+    padding: 0;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "lunchtype22light";
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    align-items: center;
+    padding: 50px 100px;
+    margin-bottom: 100px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+.nav-bar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    color: #000000;
+    margin-left: 75px;
+    font-weight: bold;
+}
+
+.nav-bar li a:hover {
+    border-bottom: 1px solid black;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-title {
+    display: flex;
+    flex-direction: column;
+    font-family: "lunchtype22light";
+
+}
+
+.title-text {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title-text h1 {
+    font-size: 3.5em;
+    letter-spacing: 4.27px;
+    margin: 5px 0 20px 0;
+}
+.title-text p {
+    margin: 5px;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+
+.title-img {
+    display: flex;
+    width: 90%;
+    align-self: center;
+    margin-bottom: 100px;
+}
+
+.title-img img {
+    width: 100%;
+    height: auto;
+}
+
+.work-with {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 70px;
+
+
+}
+
+.work-with h2 {
+    width: 15%;
+    font-size: 2.8em;
+    letter-spacing: 1.27px;
+    font-family: "lunchtype22light";
+}
+
+.work-with-sprites {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icons {
+    background: url("./assets/images/Logos.png") no-repeat;
+    margin-right: 50px;
+    height: 90px;
+    width: 150px;
+}
+
+.ico1 {
+    background-position: 40px 0;
+}
+.ico2 {
+    background-position: -110px 0;
+}
+.ico3 {
+    background-position: -260px 0;
+}
+.ico4 {
+    background-position: -435px 0;
+}
+.ico5 {
+    background-position: -610px 0;
+}
+.ico6 {
+    background-position: -800px 0;
+}
+.ico7 {
+    background-position: -985px 0;
+}
+
+.what-we-do {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 70%;
+    justify-content: space-around;
+    margin-bottom: 70px;
+}
+
+.what-we-do-text {
+    display: flex;
+    font-family: "lunchtype22light";
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+.what-we-do-text h2 {
+    font-size: 4em;
+    margin: 10px;
+    letter-spacing: 2.27px;
+}
+.what-we-do-text p:not(.smaller) {
+    letter-spacing: 1px;
+    line-height: 35px;
+    font-size: 1.5em;
+}
+.what-we-do-text .smaller {
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-size: 1.2em;
+
+}
+
+.what-we-do-text span {
+    font-weight: bold;
+}
+.what-we-do-img {
+    text-align: center;
+    width: 50%;
+}
+
+.what-we-do-img p {
+    font-family: "lunchtype22regular";
+    margin-top: -25px;
+    font-weight: 500;
+    letter-spacing: 0.27px;
+}
+
+.what-we-do-img img{
+    width: 50%;
+}
+
+.what-we-do-img {
+    background-image: url("./assets/images/Oval.png"), url("./assets/images/Oval-yellow.png") ;
+    background-repeat: no-repeat;
+    background-size: 45% 40%, 60% 75% ;
+    background-position: 65% 75%, 45% 30%;
+
+}
+
+.how-we-do {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-around;
+    margin-bottom: 70px;
+}
+
+.how-we-do-item {
+    padding: 20px 50px;
+}
+
+.how-we-do-item:hover {
+    background: #100d2f;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.how-we-do-title {
+    width: 100%;
+    text-align: center;
+    font-family: "lunchtype22light";
+    font-size: 2.5em;
+    letter-spacing: 1.27px;
+
+}
+.how-we-do-content {
+    display: flex;
+    flex-direction: row;
+    font-family: "lunchtype22light";
+}
+
+.how-we-do-text {
+    display: flex;
+    padding-top: 70px;
+    flex-direction: column;
+    width: 50%;
+    margin-right: -80px;
+    z-index: 0;
+}
+
+.how-we-do-text h2 {
+    letter-spacing: 1.27px;
+    font-size: 2em;
+}
+
+.how-we-do-text p {
+    font-size: 1.7em;
+    line-height: 40px;
+    letter-spacing: 1.5px;
+}
+
+.how-we-do-desc {
+    display: flex;
+    align-items: center;
+    font-family: "lunchtype22light";
+    flex-direction: column;
+    padding: 90px 5px;
+    width: 50%;
+    background-image: url("./assets/images/how-we-do-oval.png");
+    background-size: 90% 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.how-we-do-desc h2 {
+    font-size: 2em;
+    margin: 25px 0 15px 0;
+}
+
+.how-we-do-desc p {
+    font-size: 1.2em;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.how-we-do-desc-item {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.desc-sprites {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.links img {
+    width: 60px;
+    height: 60px;
+}
+.links a {
+    margin-right: 40px;
+}
+
+.total-counts {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-self: center;
+    justify-content: space-around;
+    width: 65%;
+    margin-bottom: 100px;
+}
+
+.total-counts p {
+    font-family: "lunchtype22regular";
+    margin: -5px 0 0 0;
+}
+.total-counts span{
+    color: #100d2f;
+    font-family: "lunchtype22regular";
+    font-size: 3.8em;
+}
+
+.our-values {
+    display: flex;
+    width: 95%;
+    align-self: center;
+    padding: 30px 10px;
+    justify-content: space-around;
+    font-family: "lunchtype22light";
+    align-items: center;
+    background: #0f0e2e;
+    border-radius: 20px;
+    color: white;
+    flex-direction: row;
+    margin-bottom: 80px;
+}
+.our-values h1 {
+    font-size: 3.5em;
+    line-height: 50px;
+    width: 6%;
+}
+.values-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    width: 15%;
+    text-align: left;
+}
+
+.values-item h2 {
+    margin-bottom: 5px;
+}
+
+.values-item p {
+    margin-top: 5px;
+    line-height: 25px;
+}
+.our-values img {
+    width: 65px;
+    height: 55px;
+}
+
+.approach, .creativity {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-self: center;
+    font-family: "lunchtype22light";
+    margin-bottom: 70px;
+}
+
+.approach-text span, .creativity-text span {
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 1.27px;
+}
+
+.approach-text p, .creativity-text p {
+    letter-spacing: 0.27px;
+    font-family: "lunchtype22light";
+    margin-bottom: 0;
+    line-height: 25px;
+}
+.approach-title {
+    text-align: center;
+    font-family: "lunchtype22light";
+    font-size: 1.5em;
+    letter-spacing: 1.27px;
+}
+.approach-content, .creativity-content {
+    display: flex;
+    flex-direction: row;
+    padding: 0 130px;
+
+}
+.approach-img, .creativity-img {
+    text-align: center;
+    width: 50%;
+}
+.approach-list, .creativity-list {
+    width: 85%;
+}
+.approach-text, .creativity-text {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.list-item>img {
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.list-item h2 {
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.dark-button {
+    display: flex;
+    background-color: #0f0e2e;
+    margin-top: 15px;
+    font-family: launchtype-regular;
+    font-size: 1.2em;
+    height: 70px;
+    color: #FFFFFF;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    width: 95%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.light {
+    background: #283174;
+}
+
+
+.footer {
+    display: flex;
+    padding: 5% 3% 0 3%;
+    flex-direction: row;
+    color: white;
+    justify-content: space-around;
+    z-index: 0;
+    height: 400px;
+    background-color: #020015;
+}
+
+.footer a {
+    text-decoration: none;
+}
+.privacy-info {
+    width: 30%;
+    opacity: 0.6;
+}
+
+.address {
+    width: 8%;
+    opacity: 0.8;
+}
+.contact {
+    width: 12%;
+    opacity: 0.8;
+}
+.careers {
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+    width: 19%;
+}
+
+.footer-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+
+}
+
+.slider {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-radius: 20px;
+    width: 80%;
+    height: 200px;
+    z-index: 1;
+    margin-bottom: -165px;
+}
